@@ -4,6 +4,7 @@ grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 # method for outputting the list
 def listing(list)
   list.each {|item|puts "* #{item}"}
+  print "\n"
 end
 
 # present it using the method
