@@ -25,3 +25,8 @@ display(students)
 # delete 2nd cohort and redisplay
 students.delete(:cohort2)
 display(students)
+
+#BONUS
+total = 0
+students.each {|k, v| total += v}
+puts "The total number of students across all cohorts: #{total}"
