@@ -1,16 +1,16 @@
 # define the grocery_list
 grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 
+# method for outputting the list
+def listing(list)
+  list.each {|item|puts "* #{item}"}
+end
+
 # present it using the method
 listing(grocery_list)
 
 # add rice to grocery_list
 grocery_list << "rice"
-
-# method for outputting the list
-def listing(list)
-  list.each {|item|puts "* #{item}"}
-end
 
 # present again
 listing(grocery_list)
@@ -28,4 +28,6 @@ puts "Second item in list: #{grocery_list[1]}"
 grocery_list.sort!
 listing(grocery_list)
 
-# delete salmon and display 
+# delete salmon and display for the last time
+grocery_list.delete("salmon")
+listing(grocery_list)
