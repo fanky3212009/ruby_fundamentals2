@@ -3,4 +3,4 @@ def convert_temp(fahrenheit)
 end
 puts "Input a temperature in Fahrenheit:"
 fahrenheit = gets.chomp.to_i
-puts "The temperature in Celcius is #{convert_temp(fahrenheit)}.)
+puts "The temperature in Celcius is #{convert_temp(fahrenheit)}."
