@@ -21,3 +21,7 @@ puts students.keys
 students.each {|k,v| students[k] = v * 1.05}
 
 display(students)
+
+# delete 2nd cohort and redisplay
+students.delete(:cohort2)
+display(students)
